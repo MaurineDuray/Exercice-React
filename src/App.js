@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import logo from './images/logo.png'
 import './App.css';
+
+import Menu from './components/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+      <div className="slide" id="home">
+        <div className='item'>
+          <img id="logoHome" src={logo} alt="" />
+          <h4>Bienvenue chez</h4>
+          <h1>Uni-vers Douceur</h1>
+          <h2>par <strong>Sandra Ciavarella</strong></h2>
+          <h6>Masso-relaxologue bien-être</h6>
+          <a href="#" id="btnPlus">En savoir plus</a>
+        </div>
+        
+      </div>
+      
+    </>
+    
   );
 }
 
