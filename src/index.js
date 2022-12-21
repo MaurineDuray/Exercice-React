@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from './components/ErrorPage';
 import About from './components/About'
 import Massages from './components/Massages';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+
 
 import { createBrowserRouter, RouterProvider  } from 'react-router-dom';
 

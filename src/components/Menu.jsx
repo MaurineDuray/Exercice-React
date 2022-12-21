@@ -5,13 +5,19 @@ const Menu = () => {
     return ( 
         <>
         <nav id="mainMenu">
-            <div id="logo"><img src={logo} alt="" /></div>
+            <div id="logo"><img src={logo} alt="" /><h6>Uni-vers Douceur</h6></div>
             <ul>
                 <li><Link to="/"> Accueil</Link></li>
                 <li><Link to="/about"> À propos</Link></li>
                 <li><Link to="/massages"> Les massages</Link></li>
                 <li><Link to="/contact"> Contact</Link></li>
             </ul>
+            <div className="burgerMenu">
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <p>Menu</p>
+            </div>
         </nav>
 
        
