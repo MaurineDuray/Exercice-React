@@ -205,6 +205,10 @@
   color: white;
   text-align: center;
 }
+.card h5{
+  font-size: 15pt;
+  font-weight: normal;
+}
 .card button{
   border: 1px solid white;
   background-color: transparent;
