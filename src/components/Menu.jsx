@@ -20,8 +20,19 @@ const Menu = () => {
             </div>
         </nav>
 
-       
-      
+        <div className="slide" id="menuResponsive">
+            <div className="croix">
+
+            </div>
+            <ul id="menuResp">
+                    <li><Link to="/"> Accueil</Link></li>
+                    <li><Link to="/about"> À propos</Link></li>
+                    <li><Link to="/massages"> Les massages</Link></li>
+                    <li><Link to="/contact"> Contact</Link></li>
+            </ul>
+        </div>
+        
+        
         </>
      );
 }

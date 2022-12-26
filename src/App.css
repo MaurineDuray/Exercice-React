@@ -57,7 +57,40 @@
   width: 50px;
   height: 50px;
 }
-
+.croix{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  z-index: 1001;
+  top: 20px;
+  cursor: pointer;
+}
+#menuResponsive{
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 0px 50px 0px 50px;
+  right: 0px;
+  width: 50%;
+  height: 100vh;
+  display: none; 
+}
+#menuResp li{
+  list-style: none;
+  text-align: center;
+}
+#menuResp li a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+.slide{
+  min-height: 100vh;
+}
 .container{
   height: auto;
   width: 100%;
@@ -192,10 +225,11 @@
 }
 .massagesList{
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 .card{
-  width: 25%;
+  width: 30%;
   background-color: rgb(73, 53, 64);
   height: auto;
   padding:10px;
@@ -243,7 +277,7 @@
   margin: 15px 0 15px 0;
   width: 100%;
   height: 150px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .harmonisant{
@@ -283,10 +317,79 @@
   background-image: url(images/cheque.jpg) !important;
 }
 
-
 .card p{
   font-size: 11pt;
 }
+
+/* Contact */
+
+#contact{
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+#contact p{
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#contact .left{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#contact h1{
+  width: 100%;
+  text-align: center;
+  color: rgb(73, 53, 64);
+  margin-bottom: 50px;
+}
+#contact form{
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form-group{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.form-group label{
+  width: 100%;
+}
+.form-group input, .form-group textarea, #send{
+  width: 100%;
+}
+.form-group input{
+  height: 35px;
+  border-radius: 20px;
+  border:rgb(70, 56, 68) 1px solid;
+}
+.form-group textarea{
+  border-radius: 20px;
+  border:rgb(70, 56, 68) 1px solid;
+  resize: none;
+}
+#send{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(73, 53, 64);
+  color: white;
+  border: none;
+  padding: 20px 0 20px 0px;
+  border-radius: 20px;
+ 
+}
+
 /* Footer */
 
 #footer{
@@ -314,9 +417,9 @@
   padding: 10px;
 }
 @media (max-width: 810px){
-    #mainMenu ul{
+  #mainMenu ul{
       display: none;
-    }
+  }
   .burgerMenu{
     display: block;
   }
@@ -342,7 +445,33 @@
     margin-left: 50%;
     transform: translateX(-50%);
   }
-  
+
+}
+@media (max-width: 600px){
+  .card{
+    width: 40%;
+  }
+  .card img{
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .massagesList{
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 500px){
+  .card{
+    width: 90%;
+  }
+  .card img{
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (max-width: 400px){
   #logo h6{
