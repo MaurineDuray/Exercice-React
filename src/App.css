@@ -251,13 +251,18 @@
   border-radius: 50px;
   font-weight:bold;
   width: 100%;
-  transition: all 1s;
+  transition: all 0.5s;
   margin-top: 10px;
   cursor: pointer;
 }
 .card button:hover{
-  background-color: white;
-  color:rgb(73, 53, 64);
+  background-color: rgba(255, 255, 255, 0.841);
+  color:rgb(73, 53, 64) !important;
+  transition: all 1s;
+}
+.linkbtn{
+  color: white;
+  text-decoration: none;
 }
 #btnContact{
   background-color: white;
@@ -416,6 +421,17 @@
   width: 30px;
   padding: 10px;
 }
+
+
+h1{
+  width: 100%;
+}
+.left h4{
+  text-align: center;
+  width: 100%;
+}
+
+
 @media (max-width: 810px){
   #mainMenu ul{
       display: none;

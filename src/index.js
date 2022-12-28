@@ -7,7 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from './components/ErrorPage';
 import About from './components/About'
 import Massages from './components/Massages';
+import Massage from './components/Massage';
+
 import Contact from './components/Contact';
+
+
 
 
 import { createBrowserRouter, RouterProvider  } from 'react-router-dom';
@@ -24,7 +28,11 @@ const router = createBrowserRouter([
   },
   {
     path:"/massages",
-    element: <Massages />
+    element: <Massages />,
+  },
+  {
+    path:"/massages/:name",
+    element: <Massage />,
   },
   {
     path: "/contact",
